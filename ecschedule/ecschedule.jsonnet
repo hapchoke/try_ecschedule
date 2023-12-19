@@ -2,7 +2,6 @@ local scheduleExpression = 'cron(0 0/5 * * ? *)';
 local variables = [
   'command_a', 
   'command_b', 
-  'command_c',
 ];
 local generateRule(cmd) = {
   name: cmd,
