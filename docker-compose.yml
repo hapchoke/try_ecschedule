@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./gunicorn_settings.py:/usr/share/gunicorn/gunicorn_settings.py
+      - ./src:/src
+      - ./static:/static
+    tty: true
+    ports:
+      - "9005:8000"
