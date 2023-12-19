@@ -45,6 +45,6 @@ jobs:
       - run: |
           ecschedule -conf ecschedule/ecschedule.jsonnet apply -all -prune
         env: 
-          SUBNET_IDS: ${{ vars.SUBNET_IDS }}
-          SECURITY_GROUP_IDS: ${{ vars.SECURITY_GROUP_IDS }}
+          SUBNET_ID: ${{ vars.SUBNET_ID }}
+          SECURITY_GROUP_ID: ${{ vars.SECURITY_GROUP_ID }}
 

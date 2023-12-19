@@ -22,8 +22,8 @@ local generateRule(cmd) = {
   launch_type: 'FARGATE',
   network_configuration: {
     aws_vpc_configuration: {
-      subnets: '{{ must_env `SUBNET_IDS` }}',
-      security_groups: '{{ must_env `SECURITY_GROUP_ID` }}',
+      subnets: ['{{ must_env `SUBNET_ID` }}'],
+      security_groups: ['{{ must_env `SECURITY_GROUP_ID` }}'],
     },
   },
 };

@@ -1,6 +1,6 @@
 ### 実行に必要な設定
 github actions variableの設定
-AWS_ACCOUNT_ID, SUBNET_IDS, SECURITY_GROUP_IDS
+AWS_ACCOUNT_ID, SUBNET_ID, SECURITY_GROUP_ID
 github actions用のroleの作成
 
 ecsEventsRoleの作成
