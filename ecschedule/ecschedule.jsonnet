@@ -1,5 +1,5 @@
 local scheduleExpression = 'cron(0 0/5 * * ? *)';
-local variables = [
+local cmds = [
   'command_a', 
   'command_b', 
   'command_c',
@@ -27,7 +27,7 @@ local generateRule(cmd) = {
     },
   },
 };
-local generateRules = [generateRule(variable) for variable in variables];
+local generateRules = [generateRule(cmd) for cmd in cmds];
 
 {
 region: '{{ must_env `AWS_REGION` }}',
