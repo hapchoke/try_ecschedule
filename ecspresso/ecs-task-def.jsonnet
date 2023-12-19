@@ -33,6 +33,5 @@
     "cpuArchitecture": "ARM64"
   },
   "pidMode": "",
-  "requiresCompatibilities": ["FARGATE"],
-  "taskRoleArn": "arn:aws:iam::{{ must_env `AWS_ACCOUNT_ID` }}:role/ecsTaskExecutionRole"
+  "requiresCompatibilities": ["FARGATE"]
 }
